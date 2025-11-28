@@ -13,4 +13,9 @@ public class DemoController {
         return new ResponseEntity<>("Application is Running !! ", HttpStatus.OK);
 
     }
+
+    @GetMapping("/get")
+    public ResponseEntity<String> getCurrentData(){
+        return new ResponseEntity<>("Second Development !!",HttpStatus.OK);
+    }
 }
