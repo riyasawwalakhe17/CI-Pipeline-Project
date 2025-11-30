@@ -18,4 +18,9 @@ public class DemoController {
     public ResponseEntity<String> getCurrentData(){
         return new ResponseEntity<>("Second Development !!",HttpStatus.OK);
     }
+
+    @GetMapping("/something")
+    public ResponseEntity<String> getSomething(){
+        return new ResponseEntity<>("Something Api triggerred !!",HttpStatus.OK);
+    }
 }
